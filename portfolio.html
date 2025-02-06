@@ -3,29 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> PORTFOLIO </title>
+    <title>My portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
+  <style>
+    * {
+      margin: 0px;
+    }
+
+    .header {
+      display: flex;
+      background-color: rgb(237, 78, 157);
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .container {
+      background-color: white;
+    }
+
+    .name {
+      padding-left: 49px;
+      padding-top: 15px;
+    }
+
+    .links {
+      padding-top: 14px;
+    }
+
+    #projects,
+    #services,
+    #about,
+    #contact {
+      padding: 40px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+
   <body>
     <div class="container">
-      <div class="header-row"> 
-        <div class="box"><h1>Anusha</h1></div>
-        <div class="box">
+      <div class="header">
+        <div><h1 class="name">Anusha</h1></div>
+        <div class="links">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
 
-            <li><a href="#contact">Contact</a></li>
+            <a href="#contact">Contact</a>
           </ul>
         </div>
       </div>
 
       <div class="row" id="home">
-        <div style="display: flex;padding-top: 50px;">
-          <div class="box">
+        <div style="display: flex; margin: 80px">
+          <div
+            class="box"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
             <h1>Full Stack Developer</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
@@ -39,18 +81,20 @@
               quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
               perferendis assumenda?
             </p>
-            <button>Button 1</button>
-            <button>Button 1</button>
+            <div>
+              <button style="width: 20%; margin: 50px">Button 1</button>
+              <button style="width: 20%">Button 2</button>
+            </div>
           </div>
           <div class="box">
-            <img src="https://picsum.photos/id/2/400/400" />
+            <img src="https://th.bing.com/th/id/OIP.5kcW7LWQpIkeflEZvQNmtwHaEC?w=291&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" />
           </div>
         </div>
       </div>
 
-      <div id="projects" class="row" style="background-color: lightcoral">
-        <h1>Projects</h1>
-        <div style="display: flex">
+      <div id="projects" class="row" style="background-color:cadetblue">
+        <h1 style="padding: 29px;">Projects</h1>
+        <div style="display: flex;">
           <div class="box">
             <h3>Project 1</h3>
             <p>
@@ -82,8 +126,8 @@
           </div>
         </div>
       </div>
-      <div id="services" class="row" style="background-color: lightblue">
-        <h1>Services</h1>
+      <div id="services" class="row" style="background-color: rgb(239, 186, 239);">
+        <h1 style="padding: 29px">Services</h1>
         <div style="display: flex">
           <div class="box">
             <h3>Web App Development</h3>
@@ -116,8 +160,8 @@
           </div>
         </div>
       </div>
-      <div id="about" class="row">
-        <h1>About</h1>
+      <div id="about" class="row" style="background-color: rgb(244, 116, 65);">
+        <h1 style="padding: 29px">About</h1>
         <h3>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
           optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
@@ -125,46 +169,44 @@
           cupiditate vel dolor.
         </h3>
         <h2>Skills</h2>
-        <h3>Java, Python, Reactjs</h3>
+        <h3>Python, HTML, CSS, R</h3>
         <p>Display the logo of all the technologies you know.</p>
       </div>
       <div
         id="contact"
         class="row"
-        style="background-color: lightgoldenrodyellow"
+        style="background-color: rgba(218, 216, 242, 0.788)"
       >
-        <h1>Contact</h1>
+        <h1 style="padding: 29px">Contact</h1>
         <div style="display: flex">
-         
-
           <div class="box">
             <h3>Contact Form</h3>
             <p>
-             <input type="text" placeholder="Enter Name">
+              <input type="text" placeholder="Enter Name" />
             </p>
             <p>
-              <input type="email" placeholder="Enter Email">
-             </p>
-             <p>
-              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-             </p>
-             <button>Send</button>
+              <input type="email" placeholder="Enter Email" />
+            </p>
+            <p>
+              <textarea
+                rows="10"
+                cols="60"
+                placeholder="Enter message"
+              ></textarea>
+            </p>
+            <button>Send</button>
           </div>
 
-          <div class="box">
+          <div class="box" style="padding: 20px;">
             <h3>Your/Company Name</h3>
             <p>
-              <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
+              <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Dolorem quia nobis eligendi reiciendis. Esse a possimus eum
+              est veritatis aliquid ut eveniet. Et illum odio ut voluptates
+              molestiae? Perspiciatis, ab.
             </p>
-            <p>
-              <b>Email Address: </b>anuxxx@email.com
-            </p>
-            <p>
-              <b>Phone Number: </b>+91 86xxxxxx980
-            </p>
+            <p><b>Email Address: </b>anusha02049@gmail.com</p>
+            <p><b>Phone Number: </b>+91 8686xxxxxx32</p>
           </div>
         </div>
       </div>
