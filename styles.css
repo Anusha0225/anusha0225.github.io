@@ -10,10 +10,11 @@
 }
 
 .items {
-  color: white;
+  color: rgb(32, 181, 240);
   text-decoration: none;
   padding: 20px;
   text-align: center;
+  font-size: 25px;
 }
 
 .nav-items {
