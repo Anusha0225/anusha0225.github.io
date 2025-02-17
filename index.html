@@ -1,218 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <nav class="nav-items">
+        <a class="items" href="#home">Home</a>
+        <a class="items" href="#project">Project</a>
+        <a class="items" href="#about">About</a>
+        <a class="items" href="#contact">Contact</a>
+      </nav>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My portfolio</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
-<style>
-  * {
-    margin: 0px;
-  }
-
-  .header {
-    display: flex;
-    background-color: rgb(237, 78, 157);
-    justify-content: space-between;
-    height: 70px;
-  }
-
-  .container {
-    background-color: white;
-  }
-
-  .name {
-    padding-left: 49px;
-    padding-top: 15px;
-  }
-
-  .links {
-    padding-top: 29px;
-  }
-
-  #projects,
-  #services,
-  #about,
-  #contact {
-    padding: 40px;
-    padding-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-</style>
-
-<body>
-  <div class="container">
-    <div class="header">
-      <div>
-        <h1 class="name">Anusha</h1>
-      </div>
-      <div class="links">
-        <ul>
-          <a href="#home">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" id="home">
-      <div style="display: flex; margin: 80px">
-        <div class="box" style="
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-            ">
-          <h1>Full Stack Developer</h1>
-          <p>
-           Full-stack developers have a high level of competency in both frontend 
-            and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS,
-            ExpressJS, Django, and PHP. Equally, full-stack developers understand 
-            various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.
+      <section id="home">
+        <div class="bg-img">
+          <img
+            align="right"
+            class="image"
+            src="https://png.pngtree.com/png-vector/20240716/ourmid/pngtree-clipart-of-beautiful-young-girl-using-laptop-png-image_13125436.png"
+          />
+          <p
+            style="
+              color: aliceblue;
+              font-size: 29px;
+              margin-left: 150px;
+              margin-bottom: 0px;
+              padding-top: 90px;
+            "
+          >
+            Hi I'm
           </p>
-          <div>
-            <button style="width: 20%; margin: 20px;">Button 1</button>
-            <button style="width: 20%; margin: 20px;">Button 2</button>
+          <p
+            style="
+              font-size: 52px;
+              font-family: 'Times New Roman';
+              font-style: italic;
+              font-weight: 500;
+              color: rgb(32, 181, 240);
+              margin-left: 170px;
+              margin-top: 0px;
+            "
+          >
+            Anusha
+          </p>
+          <p
+            style="
+              color: aliceblue;
+              font-size: 29px;
+              margin-left: 150px;
+              padding-top: 0px;
+            "
+          >
+            I am a
+
+            <span class="typing"></span>
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="project">
+        <h1 class="project-head">Projects</h1>
+        <div class="proj-row">
+          <div class="box">
+            <img
+              class="img1"
+              src="https://png.pngtree.com/png-clipart/20200701/original/pngtree-online-shopping-mart-design-png-image_5344271.jpg"
+            />
+            <h1>Online Store</h1>
+            <p>
+              Online stores are usually available 24 hours a day, and many
+              consumers.
+            </p>
+            <a href="https://anusha0225.github.io/online-store/">OnlineStore</a>
+          </div>
+          <div class="box">
+            <img
+              class="img1"
+              src="https://st2.depositphotos.com/1780367/5238/i/950/depositphotos_52386399-stock-photo-bank-3d-icon.jpg"
+            />
+            <h1>My Bank</h1>
+            <p>
+              A bank is a financial institution that is licensed to accept
+              checking and savings deposits and make loans.
+            </p>
+            <a href="https://anusha0225.github.io/My-Bank/">MyBank</a>
+          </div>
+          <div class="box">
+            <img
+              class="img1"
+              src="https://img.freepik.com/free-psd/store-announcing-discounts-black-friday-3d-illustration_1419-3273.jpg?semt=ais_hybrid"
+            />
+            <h1>Js Store</h1>
+            <p>
+              Js is a super lightweight implementation of Repository pattern for
+              relational data and aggregates.
+            </p>
+            <a href="https://anusha0225.github.io/mystore/">JsStore</a>
           </div>
         </div>
-        <div class="box">
-          <img src="https://th.bing.com/th/id/OIP.5kcW7LWQpIkeflEZvQNmtwHaEC?w=291&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" />
+      </section>
+
+      <hr />
+
+      <section id="about">
+        <h1 class="about-head">About</h1>
+        <div class="about-box">
+          <p class="about-para">
+            I am a passionate Full Stack Developer with expertise in HTML, CSS,
+            Python, and SQL. I specialize in building responsive, user-friendly
+            websites and applications from the ground up. With a strong
+            foundation in both front-end and back-end technologies, I create
+            seamless experiences by combining design and functionality. Whether
+            crafting intuitive user interfaces or optimizing database
+            performance, I am committed to delivering clean, efficient, and
+            scalable solutions that meet clients' needs.
+          </p>
+          <img
+            class="abt-img"
+            src="https://img.freepik.com/free-photo/industrial-designer-digital-art_23-2151585315.jpg"
+          />
         </div>
-      </div>
+      </section>
+
+      <hr />
+
+      <section id="contact">
+        <h1 class="cont-head">Contact</h1>
+        <div class="cont-box">
+            <p><input class="names" type="text" placeholder="Enter Name" /></p>
+            <p><input class="names" type="text" placeholder="Enter Email" /></p>
+            <p><textarea class="names" placeholder="Type your Message here"></textarea></p>
+            <p><button class="btn">Send Message</button></p>
+        </div>
+      </section>
+
+      <footer>
+        <p>CopyRights. All Rights Reserved.</p>
+    </footer>
+
     </div>
-
-    <div id="projects" class="row" style="background-color:cadetblue; display: flex; justify-content: space-around">
-      <h1 style="padding: 29px;">Projects</h1>
-      <div style="display: flex;">
-        <div class="box">
-          <h3>Project 1</h3>
-          <p>
-            Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a 
-            seller over the Internet using a web browser or a mobile app. 
-            <br>
-            <a href="https://anusha0225.github.io/online-store/"
-              style="color: rgb(53, 5, 244); padding-top: 15px; display: flex; padding-left: 10px;">
-              ONLINE STORE
-            </a>
-          </p>
-        </div>
-
-        <div class="box">
-          <h3>Project 2</h3>
-          <p>
-            Banks provide a lot of services based on the customer's requirements. They provide locker facilities, safe deposits,
-            ATM Services, Fixed Deposits, money transfer, loan for business and houses.
-            <br>
-            <a href="https://anusha0225.github.io/My-Bank/"
-              style="color: rgb(53, 5, 244);  padding-top: 15px; display: flex; padding-left: 10px;">
-              MY BANK
-            </a>
-          </p>
-
-        </div>
-
-        <div class="box">
-          <h3>Project 3</h3>
-          <p>
-            In the introduction of your store, you should tell a true story of how your 
-            store is created and what is your achievements than most importantly ...
-            <br>
-            <A href="https://anusha0225.github.io/mystore/"
-            style="color: rgb(53, 5, 244);  padding-top: 15px; display: flex; padding-left: 10px;">
-            MY STORE
-          </a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="services" class="row" style="background-color: rgb(239, 186, 239);">
-      <h1 style="padding: 29px">Services</h1>
-      <div style="display: flex">
-        <div class="box">
-          <h3>Web App Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
-        </div>
-
-        <div class="box">
-          <h3>Mobile App Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
-        </div>
-
-        <div class="box">
-          <h3>Backend Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="about" class="row" style="background-color: rgb(244, 116, 65);">
-      <h1 style="padding: 29px">About</h1>
-      <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
-        optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
-        ipsa veniam deserunt asperiores nesciunt at provident itaque
-        cupiditate vel dolor.
-      </h3>
-      <h2>Skills</h2>
-      <h3>Python, HTML, CSS, R</h3>
-      <p>Display the logo of all the technologies you know.</p>
-    </div>
-    <div id="contact" class="row" style="background-color: rgba(218, 216, 242, 0.788)">
-      <h1 style="padding: 29px">Contact</h1>
-      <div style="display: flex">
-        <div class="box">
-          <h3>Contact Form</h3>
-          <p>
-            <input type="text" placeholder="Enter Name" />
-          </p>
-          <p>
-            <input type="email" placeholder="Enter Email" />
-          </p>
-          <p>
-            <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-          </p>
-          <button>Send</button>
-        </div>
-
-        <div class="box" style="padding: 20px;">
-          <h3>Your/Company Name</h3>
-          <p>
-            <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Dolorem quia nobis eligendi reiciendis. Esse a possimus eum
-            est veritatis aliquid ut eveniet. Et illum odio ut voluptates
-            molestiae? Perspiciatis, ab.
-          </p>
-          <p><b>Email Address: </b>anusha02049@gmail.com</p>
-          <p><b>Phone Number: </b>+91 8686xxxxxx32</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer">@copyright 2024. All rights reserved.</div>
-  </div>
-</body>
-
+  </body>
 </html>
