@@ -99,12 +99,12 @@ hr {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  width: 1050px;
+  width: 800px;
 }
 
 .img1 {
-  width: 250px;
-  height: 220px;
+  width: 220px;
+  height: 200px;
   border-radius: 9px;
   transition: transform 0.2s ease-in-out;
 }
