@@ -1,159 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="bg container-fluid">
-      <nav class="nav-items">
-        <a class="items" href="#home">Home</a>
-        <a class="items" href="#project">Project</a>
-        <a class="items" href="#about">About</a>
-        <a class="items" href="#contact">Contact</a>
-      </nav>
+.bg {
+  background-color: black;
+  height: fit-content;
 
-      <section id="home">
-        <div class="bg-img">
-          <img
-            align="right"
-            class="image"
-            src="https://png.pngtree.com/png-vector/20240716/ourmid/pngtree-clipart-of-beautiful-young-girl-using-laptop-png-image_13125436.png"
-          />
-          <p
-            style="
-              color: aliceblue;
-              font-size: 29px;
-              margin-left: 150px;
-              margin-bottom: 0px;
-              padding-top: 90px;"
-          >
-            Hi I'm
-          </p>
-          <p
-            style="
-              font-size: 52px;
-              font-family: 'Times New Roman';
-              font-style: italic;
-              font-weight: 500;
-              color: rgb(32, 181, 240);
-              margin-left: 170px;
-              margin-top: 0px;
-            "
-          >
-            Anusha
-          </p>
-          <p
-            style="
-              color: aliceblue;
-              font-size: 29px;
-              margin-left: 150px;
-              padding-top: 0px;
-            "
-          >
-            I am a
+  background-size: cover;
+}
 
-            <span class="typing"></span>
-          </p>
-        </div>
-      </section>
+.bg-img {
+  height: 80vh;
+}
 
-      <hr />
+.items {
+  color: rgb(32, 181, 240);
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
 
-      <section id="project">
-        <h1 class="project-head">Projects</h1>
-        <div class="proj-row">
-          <div class="box">
-            <img
-              class="img1"
-              src="https://png.pngtree.com/png-clipart/20200701/original/pngtree-online-shopping-mart-design-png-image_5344271.jpg"
-            />
-            <h1>Online Store</h1>
-            <p>
-              Online stores are usually available 24 hours a day, and many
-              consumers.
-            </p>
-            <a href="https://anusha0225.github.io/onlinestore/">OnlineStore</a>
-          </div>
-          <div class="box">
-            <img
-              class="img1"
-              src="https://st2.depositphotos.com/1780367/5238/i/950/depositphotos_52386399-stock-photo-bank-3d-icon.jpg"
-            />
-            <h1>My Bank</h1>
-            <p>
-              A bank is a financial institution that is licensed to accept
-              checking and savings deposits and make loans.
-            </p>
-            <a href="https://anusha0225.github.io/jsbank/">MyBank</a>
-          </div>
-          <div class="box">
-            <img
-              class="img1"
-              src="https://img.freepik.com/free-psd/store-announcing-discounts-black-friday-3d-illustration_1419-3273.jpg?semt=ais_hybrid"
-            />
-            <h1>My Store</h1>
-            <p>
-              It is a super lightweight implementation of Repository pattern for
-              relational data and aggregates.
-            </p>
-            <a href="https://anusha0225.github.io/mystore/">MyStore</a>
-          </div>
-          <div class="box">
-            <img
-              class="img1"
-              src="https://img.freepik.com/free-photo/homepage-seen-computer-screen_23-2149416730.jpg"
-            />
-            <h1>Website</h1>
-            <p>
-              A bank is a financial institution that is licensed to accept
-              checking and savings deposits and make loans.
-            </p>
-            <a href="https://anusha0225.github.io/website/">Website</a>
-          </div>
-        </div>
-      </section>
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 40px;
+  background-color: rgba(32, 31, 31, 0.685);
+}
 
-      <hr />
+.image {
+  margin-right: 80px;
+  margin-top: 40px;
+  height: 350px;
+  width: 400px;
+}
 
-      <section id="about">
-        <h1 class="about-head">About</h1>
-        <div class="about-box">
-          <p class="about-para">
-            I am a passionate Full Stack Developer with expertise in HTML, CSS,
-            Python, and SQL. I specialize in building responsive, user-friendly
-            websites and applications from the ground up. With a strong
-            foundation in both front-end and back-end technologies, I create
-            seamless experiences by combining design and functionality. Whether
-            crafting intuitive user interfaces or optimizing database
-            performance, I am committed to delivering clean, efficient, and
-            scalable solutions that meet clients' needs.
-          </p>
-          <img
-            class="abt-img"
-            src="https://img.freepik.com/free-photo/industrial-designer-digital-art_23-2151585315.jpg"
-          />
-        </div>
-      </section>
+.head {
+  color: aliceblue;
+  padding: 40px;
+}
 
-      <hr />
+.typing::after {
+  padding-left: 15px;
+  content: "Web Developer";
+  font-size: 30px;
+  color: rgb(32, 181, 240);
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 1px solid white;
+  animation: typing 1s steps(9) infinite alternate, blink 10s infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: aqua;
+  }
+}
+@keyframes changeText {
+  0%,
+  100% {
+    content: "Full Stack Developer";
+  }
+}
+.typing::after {
+  animation: typing 7s steps(50) infinite alternate, blink 0.6s infinite,
+    changeText 6s infinite;
+}
 
-      <section id="contact">
-        <h1 class="cont-head">Contact</h1>
-        <div class="cont-box">
-            <p><input class="names" type="text" placeholder="Enter Name" /></p>
-            <p><input class="names" type="text" placeholder="Enter Email" /></p>
-            <p><textarea class="names1" placeholder="Type your Message here"></textarea></p>
-            <p><button class="btn">Send Message</button></p>
-        </div>
-      </section>
+hr {
+  width: 98%;
+  border-color: rgb(86, 84, 84);
+}
 
-      <footer>
-        <p>CopyRights. All Rights Reserved.</p>
-    </footer>
+.project-head {
+  color: green;
+  text-align: center;
+  font-size: 50px;
+  flex-wrap: wrap;
+}
 
-    </div>
-  </body>
-</html>
+.proj-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.box {
+  background-color: rgb(167, 192, 159);
+  border-radius: 17px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+
+.img1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 9px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.about-head {
+  color: chocolate;
+  font-size: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  background-color: coral;
+  margin: 29px;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-para {
+  color: rgb(242, 224, 205);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.abt-img {
+  height: 250px;
+  width: 290px;
+  margin-left: 10px;
+}
+
+.cont-box {
+  border: 1px solid blueviolet;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  height: fit-content;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.cont-head {
+  color: blueviolet;
+  text-align: center;
+  font-size: 50px;
+}
+
+.names {
+  width: 70%;
+  height: 30px;
+}
+
+.names1 {
+  width: 70%;
+  height: 70px;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border: 0px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  background-color: rgba(195, 170, 234, 0.683);
+  padding: 5px;
+}
