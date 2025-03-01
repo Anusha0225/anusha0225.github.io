@@ -91,20 +91,21 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 40px;
 }
 
 .box {
   background-color: rgb(167, 192, 159);
   border-radius: 17px;
-  margin: 20px;
+  margin: 40px;
   padding: 20px;
   text-align: center;
-  width: 800px;
+  width: 700px;
 }
 
 .img1 {
-  width: 220px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   border-radius: 9px;
   transition: transform 0.2s ease-in-out;
 }
