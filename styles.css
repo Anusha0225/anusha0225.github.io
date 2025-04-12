@@ -333,12 +333,12 @@ hr {
 }
 
 .image {
-  height: 450px;
-  width: 620px;
+  height: 350px;
+  width: fit-content;
   object-fit: contain;
   align-self: flex-end;
   /* padding-top: 0px; */
-  margin-left: 300px;
+  margin-left: 250px;
 }
 
 
