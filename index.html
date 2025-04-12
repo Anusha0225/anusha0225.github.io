@@ -18,47 +18,21 @@
 
       <section id="home">
         <div class="bg-img">
-          <img
-            align="right"
-            class="image"
-            src="https://png.pngtree.com/png-vector/20240716/ourmid/pngtree-clipart-of-beautiful-young-girl-using-laptop-png-image_13125436.png"
-          />
-          <p
-            style="
-              color: aliceblue;
-              font-size: 29px;
-              margin-left: 150px;
-              margin-bottom: 0px;
-              padding-top: 90px;
-            "
-          >
-            Hi I'm
-          </p>
-          <p
-            style="
-              font-size: 52px;
-              font-family: 'Times New Roman';
-              font-style: italic;
-              font-weight: 500;
-              color: rgb(32, 181, 240);
-              margin-left: 170px;
-              margin-top: 0px;
-            "
-          >
-            Anusha
-          </p>
-          <p
-            style="
-              color: aliceblue;
-              font-size: 29px;
-              margin-left: 150px;
-              padding-top: 0px;
-            "
-          >
-            I am a
-
-            <span class="typing"></span>
-          </p>
+          <div class="intro-text">
+            <p>Hi I'm</p>
+            <p class="name">Anusha</p>
+            <p>
+              I am a <br />
+              <span class="typing"></span>
+            </p>
+          </div>
+          <div>
+            <img
+              class="image"
+              src="https://png.pngtree.com/png-vector/20240716/ourmid/pngtree-clipart-of-beautiful-young-girl-using-laptop-png-image_13125436.png"
+              alt="Girl using laptop"
+            />
+          </div>
         </div>
       </section>
 
@@ -77,7 +51,9 @@
               Online stores are usually available 24 hours a day, and many
               consumers.
             </p>
-            <a href="https://anusha0225.github.io/onlinestore/">OnlineStore</a>
+            <a class="alinks" href="https://anusha0225.github.io/onlinestore/"
+              >OnlineStore</a
+            >
           </div>
           <div class="box">
             <img
@@ -89,7 +65,9 @@
               A bank is a financial institution that is licensed to accept
               checking and savings deposits and make loans.
             </p>
-            <a href="https://anusha0225.github.io/jsbank/">MyBank</a>
+            <a class="alinks" href="https://anusha0225.github.io/jsbank/"
+              >MyBank</a
+            >
           </div>
           <div class="box">
             <img
@@ -101,7 +79,9 @@
               It is a super lightweight implementation of Repository pattern for
               relational data and aggregates.
             </p>
-            <a href="https://anusha0225.github.io/mystore/">MyStore</a>
+            <a class="alinks" href="https://anusha0225.github.io/mystore/"
+              >MyStore</a
+            >
           </div>
         </div>
         <div class="proj-row">
@@ -115,7 +95,9 @@
               A bank is a financial institution that is licensed to accept
               checking and savings deposits and make loans.
             </p>
-            <a href="https://anusha0225.github.io/website/">Website</a>
+            <a class="alinks" href="https://anusha0225.github.io/website/"
+              >Website</a
+            >
           </div>
           <div class="box">
             <img
@@ -124,8 +106,9 @@
             />
             <h1>My React Store</h1>
             <p>A React store centralizes application state.</p>
-            <a
-              href="https://anusha0225.github.io/react-store-a/">My React Store</a>
+            <a class="alinks" href="https://anusha0225.github.io/react-store-a/"
+              >My React Store</a
+            >
           </div>
         </div>
       </section>
@@ -137,31 +120,31 @@
         <div class="serv-row">
           <div class="serv-box">
             <h1>Web App Development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
+          <p style="font-weight: 100; padding-top: 20px;">
+              Web app development is the process of creating application
+              software that runs on a web browser. Unlike traditional desktop
+              apps, web apps are accessed via the internet and don't need to be
+              installed.
             </p>
           </div>
 
           <div class="serv-box">
             <h1>Mobile App Development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
+            <p style="font-weight: 100; padding-top: 20px;">
+              Mobile app development is the process of creating software
+              applications that run on mobile devices, like smartphones and
+              tablets. These apps can be for iOS (Apple) or Android (Google)
+              platforms—or both.
             </p>
           </div>
 
           <div class="serv-box">
             <h1>Backend Development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
+            <p style="font-weight: 100; padding-top: 20px;">
+              Backend development refers to the server-side of a web or mobile
+              application. It’s everything the user doesn’t see but that makes
+              the app work—like managing databases, handling logic, and making
+              sure everything runs smoothly and securely.
             </p>
           </div>
         </div>
@@ -184,7 +167,7 @@
           </p>
           <img
             class="abt-img"
-            src="https://img.freepik.com/free-photo/industrial-designer-digital-art_23-2151585315.jpg"
+            src="https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsb2ZmaWNlMTVfYV9taW5pbWFsX2FuZF9sZXNzX2RldGFpbF9pbGx1c3RyYXRpb25fb2ZfYV9sb19jZDcwMDZlNi0wOWExLTQ2ZGEtOTljMi0wMmU2YTg4OTg2N2VfMS5qcGc.jpg"
           />
         </div>
       </section>
@@ -212,4 +195,5 @@
     </div>
   </body>
 </html>
+
 
