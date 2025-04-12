@@ -337,8 +337,8 @@ hr {
   width: 620px;
   object-fit: contain;
   align-self: flex-end;
-  padding-top: 0px;
-  margin-left: 500px;
+  /* padding-top: 0px; */
+  margin-left: 300px;
 }
 
 
